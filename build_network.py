@@ -3,6 +3,14 @@ import matplotlib.pyplot as plt
 import random
 import numpy as np
 
+def getInverseHarmonicMean(graph, node):
+    # calculate the IHM of an existing node in a graph
+    sum_inverse_degrees = 0
+    for n in graph.neighbors(node):
+        sum_inverse_degrees += 1/len(graph.neighbors(n))
+    IHM = sum_inverse_degrees / graph.degree(node)
+    return IHM
+
 def preferentialAttachPipi(no_node, no_edge):
     G = nx.Graph(model = 'One')
     G.add_node(0, att1= 0, att2= 1)
@@ -118,4 +126,43 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
         # plt.show()
     nx.draw(G, with_labels=True)
     plt.show()
+    return []
+
+def preferentialAttachment_MDA(max_nodes, max_edges, num_neighbors, loner=False):
+    # initialize empty graph
+    G = nx.Graph()
+    # initialize first two nodes and edge
+    G.add_nodes_from([0, 1])
+    G.add_edge(0, 1)
+    for i in range(2, max_nodes):
+
+        # insert new node
+        G.add_node(i)
+        print('---Inserted node %d---' % i)
+        # picking a random node
+        rand_node = np.random.randint(0, i - 1)
+        # iterate over num_neighbors of its neighbors
+        n_counter = 0
+        p = 1
+        for n in G.neighbors(rand_node):
+            if n_counter > num_neighbors: break
+            p *= (G.degree(n) / max_nodes) * getInverseHarmonicMean(G, n)
+            n_counter += 1
+        if random.random() <= p:
+            G.add_edge(rand_node, i)
+            print('edge between %d and %d created' % (rand_node, i))
+        if not loner and G.degree(i) == 0:
+            rand_node = np.random.randint(0, i - 1)
+            G.add_edge(rand_node, i)
+            print('did not form edge with prev. nodes, will add %d to rand. node %d' % (i, rand_node))
+        # if max number of edges exceeded, end the program
+        if G.number_of_edges() >= max_edges:
+            print("exceeded max edges")
+            break
+        # nx.draw(G, with_labels=True)
+        # plt.show()
+    nx.draw(G, with_labels=True)
+    plt.show()
+    return []
+
     return []
