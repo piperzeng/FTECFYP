@@ -119,7 +119,7 @@ def preferentialAttachment2ndOrder(max_nodes, coef, max_p=1.0, loner=False):
                 sum_neighbors_degree += G.degree(neighbor)
                 sum_neighbors_degree_squared += pow(G.degree(neighbor), 2)
             # calculate the prob. (p) that new node (i) will form edge with node (node)
-            p = (G.degree(node) + coef * sum_neighbors_degree) / (G.number_of_edges() + coef * sum_neighbors_degree_squared)
+            p = (G.degree(node) + coef * sum_neighbors_degree) / (2*G.number_of_edges() + coef * sum_neighbors_degree_squared)
             if  p >= max_p: p = max_p
             print("the p value for node %d is: %f" % (node, p))
             if random.random() <= p:
