@@ -7,7 +7,7 @@ def getInverseHarmonicMean(graph, node):
     # calculate the IHM of an existing node in a graph
     sum_inverse_degrees = 0
     for n in graph.neighbors(node):
-        sum_inverse_degrees += 1/len(graph.neighbors(n))
+        sum_inverse_degrees += 1/graph.degree(n)
     IHM = sum_inverse_degrees / graph.degree(node)
     return IHM
 
@@ -57,30 +57,30 @@ def preferentialAttachment(max_nodes, max_edges, loner=False, max_p=1.0):
         node_list = sorted(G.degree, key=lambda x: x[1], reverse=True)
         # insert new node
         G.add_node(i)
-        print('---Inserted node %d---' % i)
+        # print('---Inserted node %d---' % i)
         # print(node_degree_list)
         for node, degrees in node_list:
             if (G.degree(node) / G.number_of_edges()) >= max_p:
                 p = max_p
             else:
                 p = G.degree(node) / G.number_of_edges()
-            print("the p value for node %d is: %f" % (node, p))
+            # print("the p value for node %d is: %f" % (node, p))
             if random.random() <= p:
                 G.add_edge(node, i)
-                print('edge between %d and %d created' % (node, i))
+                # print('edge between %d and %d created' % (node, i))
         if not loner and G.degree(i) == 0:
             rand_node = np.random.randint(0, i - 1)
             G.add_edge(rand_node, i)
-            print('did not form edge with prev. nodes, will add %d to rand. node %d' % (i, rand_node))
+            # print('did not form edge with prev. nodes, will add %d to rand. node %d' % (i, rand_node))
         # if max number of edges exceeded, end the program
         if G.number_of_edges() >= max_edges:
-            print("exceeded max edges")
+            # print("exceeded max edges")
             break
         # nx.draw(G, with_labels=True)
         # plt.show()
-    nx.draw(G, with_labels=True)
-    plt.show()
-    return []
+    # nx.draw(G, with_labels=True)
+    # plt.show()
+    return G
 
 def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
     # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
@@ -147,37 +147,42 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
     plt.show()
     return []
 
-def preferentialAttachment_MDA(max_nodes, max_edges, num_neighbors, loner=False):
-    # initialize empty graph
-    G = nx.Graph()
-    # initialize first two nodes and edge
-    G.add_nodes_from([0, 1])
-    G.add_edge(0, 1)
-    for i in range(2, max_nodes):
+def preferentialAttachment_MDA(max_nodes, m0, m):
+    # uncertainty: what if the mediator doesn't have m neighbors?
+    # - current behavior: if total neighbors < m, use total neighbors
 
+    # initialize a graph with m0 nodes connected in an arbitrary fashion
+    G = preferentialAttachment(m0, 100)
+    for new_node in range(m0+1, max_nodes):
+        # first obtain a list of connected nodes in the existing graph
+        connected_nodes_list = []
+        for n in G.degree:
+            if n[1] != 0: connected_nodes_list.append(n[0])
         # insert new node
-        G.add_node(i)
-        print('---Inserted node %d---' % i)
-        # picking a random node
-        rand_node = np.random.randint(0, i - 1)
-        # iterate over num_neighbors of its neighbors
-        n_counter = 0
-        p = 1
-        for n in G.neighbors(rand_node):
-            if n_counter > num_neighbors: break
-            p *= (G.degree(n) / max_nodes) * getInverseHarmonicMean(G, n)
-            n_counter += 1
-        if random.random() <= p:
-            G.add_edge(rand_node, i)
-            print('edge between %d and %d created' % (rand_node, i))
-        if not loner and G.degree(i) == 0:
-            rand_node = np.random.randint(0, i - 1)
-            G.add_edge(rand_node, i)
-            print('did not form edge with prev. nodes, will add %d to rand. node %d' % (i, rand_node))
-        # if max number of edges exceeded, end the program
-        if G.number_of_edges() >= max_edges:
-            print("exceeded max edges")
-            break
+        G.add_node(new_node)
+        print('---Inserted node %d---' % new_node)
+        # picking a random node from list of connected nodes as mediator
+        # for n in connected_nodes_list:
+        #     N = len(list(G.neighbors(n)))
+        #     p = (G.degree(n) / N) * getInverseHarmonicMean(G, n)
+        mediator = random.choice(connected_nodes_list)
+        print("this is the randomly chosen connected node: %d" % mediator)
+
+
+        # pick m of mediator's neighbors with uniform probability
+        all_neighbors_list = list(G.neighbors(mediator))
+        print("this is the list of all of mediator's neighbors: ", all_neighbors_list)
+        m_neighbors_list =[]
+        # randomly select min(m, total_num_of_neighbors) nodes without replacement
+        for n in range(min(m, G.degree(mediator))):
+            neighbor = random.choice(all_neighbors_list)
+            all_neighbors_list.remove(neighbor)
+            m_neighbors_list.append(neighbor)
+        print("this is list of m randomly selected neighbors of mediator: ", m_neighbors_list)
+        # connect the new node with the nodes in m_neighbors_list
+        for n in m_neighbors_list:
+            G.add_edge(n, new_node)
+            print('edge between %d and %d created' % (n, new_node))
         # nx.draw(G, with_labels=True)
         # plt.show()
     nx.draw(G, with_labels=True)
@@ -185,3 +190,5 @@ def preferentialAttachment_MDA(max_nodes, max_edges, num_neighbors, loner=False)
     return []
 
     return []
+
+preferentialAttachment_MDA(20,14,6)
