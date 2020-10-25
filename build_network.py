@@ -2,6 +2,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 import random
 import numpy as np
+from plot_graph import *
 
 def getInverseHarmonicMean(graph, node):
     # calculate the IHM of an existing node in a graph
@@ -10,6 +11,7 @@ def getInverseHarmonicMean(graph, node):
         sum_inverse_degrees += 1/len(graph.neighbors(n))
     IHM = sum_inverse_degrees / graph.degree(node)
     return IHM
+
 
 def preferentialAttachPipi(no_node, no_edge):
     G = nx.Graph(model = 'One')
@@ -20,21 +22,19 @@ def preferentialAttachPipi(no_node, no_edge):
     for i in range(2,no_node):
         G.add_node(i, att1= 0, att2= 1)
         node_list = sorted(node for (node, val) in sorted(G.degree, key=lambda x: x[1], reverse=True))
-        count = 0
+        #count = 0
         for j in node_list:
             if G.number_of_edges() != 0 :
-                p = G.degree(j)/G.number_of_edges()
+                p = G.degree(j)/(2*G.number_of_edges())
             if round(np.random.uniform(0,1),1)<p:
                 G.add_edge(j, i, weight=1)
-                count=count+1
-                if count==no_edge :
-                    break
+                # count=count+1
+                # if count==no_edge :
+                #     break
         if G.degree[i] == 0:
             tmp = np.random.randint(0, i-1)
             G.add_edge(tmp, i, weight=1)
-    nx.draw(G, with_labels=True)
-    plt.savefig("simple_path.png")
-    plt.show()
+    plotGraph(G)
 
 def preferentialAttachment(max_nodes, max_edges, loner=False, max_p=1.0):
     # v_1 notes: this version follows the The Barabási–Albert model which uses a linear preferential attachment
@@ -76,11 +76,7 @@ def preferentialAttachment(max_nodes, max_edges, loner=False, max_p=1.0):
         if G.number_of_edges() >= max_edges:
             print("exceeded max edges")
             break
-        # nx.draw(G, with_labels=True)
-        # plt.show()
-    nx.draw(G, with_labels=True)
-    plt.show()
-    return []
+    plotGraph(G)
 
 def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
     # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
@@ -141,11 +137,7 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
         #     print("exceeded max edges")
         #     break
 
-        # nx.draw(G, with_labels=True)
-        # plt.show()
-    nx.draw(G, with_labels=True)
-    plt.show()
-    return []
+    plotGraph(G)
 
 def preferentialAttachment_MDA(max_nodes, max_edges, num_neighbors, loner=False):
     # initialize empty graph
@@ -180,8 +172,9 @@ def preferentialAttachment_MDA(max_nodes, max_edges, num_neighbors, loner=False)
             break
         # nx.draw(G, with_labels=True)
         # plt.show()
-    nx.draw(G, with_labels=True)
-    plt.show()
+
+    plotGraph(G)
     return []
 
     return []
+
