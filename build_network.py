@@ -9,33 +9,35 @@ def getInverseHarmonicMean(graph, node):
     # calculate the IHM of an existing node in a graph
     sum_inverse_degrees = 0
     for n in graph.neighbors(node):
-        sum_inverse_degrees += 1/graph.degree(n)
+        sum_inverse_degrees += 1 / graph.degree(n)
     IHM = sum_inverse_degrees / graph.degree(node)
     return IHM
 
 
-def preferentialAttachPipi(no_node, no_edge):
-    G = nx.Graph(model = 'One')
-    G.add_node(0, att1= 0, att2= 1)
-    G.add_node(1, att1= 0, att2= 1)
-    G.add_edge(0, 1, weight=1)
+def preferentialAttachmentV1(max_nodes, loner=False):
+    G = nx.Graph()
+    G.add_node(0)
+    G.add_node(1)
+    G.add_edge(0, 1)
     p = 0.5
-    for i in range(2,no_node):
-        G.add_node(i, att1= 0, att2= 1)
+    # ----- Part 1 -----
+    for i in range(2, max_nodes):
+        # ----- Part 1.1 -----
+        G.add_node(i)
         node_list = sorted(node for (node, val) in sorted(G.degree, key=lambda x: x[1], reverse=True))
-        #count = 0
+        # ----- Part 1.2 -----
         for j in node_list:
-            if G.number_of_edges() != 0 :
-                p = G.degree(j)/(2*G.number_of_edges())
-            if round(np.random.uniform(0,1),1)<p:
-                G.add_edge(j, i, weight=1)
-                # count=count+1
-                # if count==no_edge :
-                #     break
-        if G.degree[i] == 0:
-            tmp = np.random.randint(0, i-1)
-            G.add_edge(tmp, i, weight=1)
+            if G.number_of_edges() != 0:
+                p = G.degree(j) / (2 * G.number_of_edges())
+            if (round(np.random.uniform(0, 1), 1) < p) & (j != i):
+                G.add_edge(j, i)
+        # ----- Part 1.3 -----
+        if not loner & (G.degree[i] == 0):
+            tmp = node_list[0]
+            G.add_edge(tmp, i)
     plotGraph(G)
+    return (G)
+
 
 def preferentialAttachment(max_nodes, max_edges, loner=False, max_p=1.0):
     # v_1 notes: this version follows the The Barabási–Albert model which uses a linear preferential attachment
@@ -81,6 +83,7 @@ def preferentialAttachment(max_nodes, max_edges, loner=False, max_p=1.0):
             break
     plotGraph(G)
 
+
 def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
     # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
     # formula: https://www.sciencedirect.com/science/article/pii/S0378437104001402
@@ -114,8 +117,9 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
                 sum_neighbors_degree += G.degree(neighbor)
                 sum_neighbors_degree_squared += pow(G.degree(neighbor), 2)
             # calculate the prob. (p) that new node (i) will form edge with node (node)
-            p = (G.degree(node) + coef * sum_neighbors_degree) / (2*G.number_of_edges() + coef * sum_neighbors_degree_squared)
-            if  p >= max_p: p = max_p
+            p = (G.degree(node) + coef * sum_neighbors_degree) / (
+                        2 * G.number_of_edges() + coef * sum_neighbors_degree_squared)
+            if p >= max_p: p = max_p
             print("the p value for node %d is: %f" % (node, p))
             if random.random() <= p:
                 G.add_edge(node, i)
@@ -129,13 +133,14 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
     plotGraph(G)
     return []
 
+
 def preferentialAttachment_MDA(max_nodes, m0, m):
     # uncertainty: what if the mediator doesn't have m neighbors?
     # - current behavior: if total neighbors < m, use total neighbors
 
     # initialize a graph with m0 nodes connected in an arbitrary fashion
     G = preferentialAttachment(m0, 100)
-    for new_node in range(m0+1, max_nodes):
+    for new_node in range(m0 + 1, max_nodes):
         # first obtain a list of connected nodes in the existing graph
         connected_nodes_list = []
         for n in G.degree:
@@ -150,11 +155,10 @@ def preferentialAttachment_MDA(max_nodes, m0, m):
         mediator = random.choice(connected_nodes_list)
         print("this is the randomly chosen connected node: %d" % mediator)
 
-
         # pick m of mediator's neighbors with uniform probability
         all_neighbors_list = list(G.neighbors(mediator))
         print("this is the list of all of mediator's neighbors: ", all_neighbors_list)
-        m_neighbors_list =[]
+        m_neighbors_list = []
         # randomly select min(m, total_num_of_neighbors) nodes without replacement
         for n in range(min(m, G.degree(mediator))):
             neighbor = random.choice(all_neighbors_list)
@@ -171,4 +175,5 @@ def preferentialAttachment_MDA(max_nodes, m0, m):
     plotGraph(G)
     return []
 
-    return []
+
+preferentialAttachmentV1(100)
