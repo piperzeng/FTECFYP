@@ -19,9 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="Edited PA.md, commit before i go breakfast">
+    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="Tried Typora for editing markdown file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PA.md" beforeDir="false" afterPath="$PROJECT_DIR$/PA.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603756980041</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Tried Typora for editing markdown file">
+      <created>1603765106245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603765106245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -184,13 +190,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="addded PA.md" />
     <MESSAGE value="Edited PA.md, commit before i go breakfast" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited PA.md, commit before i go breakfast" />
+    <MESSAGE value="Tried Typora for editing markdown file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried Typora for editing markdown file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601102895485">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1601102895485" />
+    <state x="478" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603765236006">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="478" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.860@0.0.1440.860" timestamp="1603765236006" />
     <state x="284" y="192" key="FileChooserDialogImpl" timestamp="1603754447396">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -219,10 +230,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603756982982">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603765110023">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603756982982" />
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603765110023" />
     <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603756964344">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
@@ -231,10 +242,10 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="714" y="0" width="731" height="865" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1603764305778" />
-    <state x="165" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603754430948">
+    <state x="166" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1603765241973">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="165" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1603754430948" />
+    <state x="166" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1440.860@0.0.1440.860" timestamp="1603765241973" />
   </component>
   <component name="masterDetails">
     <states>
