@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="addded PA.md">
+    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="Edited PA.md, commit before i go breakfast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PA.md" beforeDir="false" afterPath="$PROJECT_DIR$/PA.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_network.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603756074870</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Edited PA.md, commit before i go breakfast">
+      <created>1603756980041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603756980041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -177,7 +183,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="addded PA.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="addded PA.md" />
+    <MESSAGE value="Edited PA.md, commit before i go breakfast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited PA.md, commit before i go breakfast" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601102895485">
@@ -212,18 +219,18 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603756077419">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603756982982">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603756077419" />
-    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603756063963">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603756982982" />
+    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603756964344">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1603756063963" />
-    <state x="714" y="0" width="731" height="865" maximized="true" key="dock-window-1" timestamp="1603756084513">
+    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1603756964344" />
+    <state x="714" y="0" width="731" height="865" key="dock-window-1" timestamp="1603764305778">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="714" y="0" width="731" height="865" maximized="true" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1603756084513" />
+    <state x="714" y="0" width="731" height="865" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1603764305778" />
     <state x="165" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603754430948">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

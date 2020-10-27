@@ -1,4 +1,7 @@
+
+
 # Description for the Preferential Attachment Functions
+
 ## 1. PreferntialAttachmentV1
 ```python
 def preferentialAttachmentV1(max_nodes, loner=False):
@@ -26,21 +29,20 @@ def preferentialAttachmentV1(max_nodes, loner=False):
     return (G)
 ```
 ### Basic Description:
-User defines the maximum number of nodes in the final graph (max_nodes) as well as wheter loner behavior
-should be exhibited (more on this later). The Function then returns a preferential attachment (PA) graph.
+User defines the maximum number of nodes in the final graph (max_nodes) as well as whether loner behavior should be exhibited (more on this later). The Function then returns a preferential attachment (PA) graph.
 
 #### Part 1
 ```python
 for i in range(2, max_nodes):
 ```
-The loop will run (max_nodes - 2) times, omitting nodes 0 and 1 because they are already initialized.
+The loop will run $(max\_nodes - 2)$ times, omitting nodes 0 and 1 because they are already initialized.
 #### Part 1.1
 ```python
 node_list = sorted(node for (node, val) in sorted(G.degree, key=lambda x: x[1], reverse=True))
 G.add_node(i)
 ```
-We first obtain a list of existing nodes sorted by degrees in descending order, 
-then we add the new node i into the graph
+We first obtain a list of existing nodes sorted by degrees in descending order, then we add the new $node_i$ into the graph
+
 #### Part 1.2
 ```python
 for j in node_list:
@@ -49,8 +51,19 @@ for j in node_list:
     if (round(np.random.uniform(0, 1), 1) < p):
         G.add_edge(j, i)
 ```
-Now we loop through the list of existing nodes excluding i (node_list) and calculate the probability p 
-that the new node i will form an edge with the current existing node.\
-Probability p that new node i will appending to existing node j is calculated as follows:
-```
-```
+Now we loop through the list of existing nodes excluding $node_i$ (node_list) and calculate the probability p that the new $node_i$ will form an edge with the current existing node.
+Probability $p_i$ that new $node_i$ will appending to existing $node_j$ is calculated as follows:
+$$
+\begin{align*}
+p_i = \frac{k_i}{\sum_j k_j}\label{ref1}
+\end{align*}
+\\
+$$
+Once we have calculated the probability, we used the numpy's random.uniform() function to get a random float between [0,1] 
+
+
+
+
+
+
+
