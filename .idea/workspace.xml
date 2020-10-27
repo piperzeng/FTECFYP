@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="added two folders for organisizing files">
-      <change afterPath="$PROJECT_DIR$/PA.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nx.html" beforeDir="false" afterPath="$PROJECT_DIR$/nx.html" afterDir="false" />
-    </list>
+    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="Final commit before I study for midterm x(" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603766183108</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final commit before I study for midterm x(">
+      <created>1603767811830</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603767811830</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Final commit before I study for midterm x(">
+      <created>1603767830891</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603767830891</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -224,7 +233,8 @@
     <MESSAGE value="added a ipynb file so that on gitbub it is visible" />
     <MESSAGE value="Now actually added the ipynb file" />
     <MESSAGE value="added two folders for organisizing files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added two folders for organisizing files" />
+    <MESSAGE value="Final commit before I study for midterm x(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final commit before I study for midterm x(" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601102895485">
@@ -239,34 +249,34 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="284" y="192" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603754447396" />
-    <state width="1420" height="2" key="GridCell.Tab.0.bottom" timestamp="1603767338612">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom" timestamp="1603767845139">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="1420" height="2" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603767338612" />
-    <state width="1420" height="2" key="GridCell.Tab.0.center" timestamp="1603767338611">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603767845139" />
+    <state width="1420" height="2" key="GridCell.Tab.0.center" timestamp="1603767845139">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="1420" height="2" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603767338611" />
-    <state width="1420" height="2" key="GridCell.Tab.0.left" timestamp="1603767338611">
+    <state width="1420" height="2" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603767845139" />
+    <state width="1420" height="2" key="GridCell.Tab.0.left" timestamp="1603767845139">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="1420" height="2" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603767338611" />
-    <state width="1420" height="2" key="GridCell.Tab.0.right" timestamp="1603767338611">
+    <state width="1420" height="2" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603767845139" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right" timestamp="1603767845139">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="1420" height="2" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603767338611" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603767845139" />
     <state x="4" y="82" key="SettingsEditor" timestamp="1603754452592">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603766186170">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603767835599">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603766186170" />
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603767835599" />
     <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603767169511">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
