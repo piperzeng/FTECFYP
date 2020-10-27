@@ -33,6 +33,7 @@ def preferentialAttachmentV1(max_nodes, loner=False):
                 G.add_edge(j, i)
         # ----- Part 1.3 -----
         if not loner & (G.degree[i] == 0):
+            # tmp = node_list[random.choice(node_list)]
             tmp = node_list[0]
             G.add_edge(tmp, i)
     plotGraph(G)
