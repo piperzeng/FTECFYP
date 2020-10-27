@@ -147,3 +147,27 @@ The above function generated the following:
 
 ![max_p = 0.2](../graphs/PAv2_graph1.PNG)
 
+## preferentialAttachmentV3() 
+In this version we focus on methods to tweak $p_i$. As a result of the formula : $p_i = \frac{k_i}{\sum_j k_j}$, we found that $p_i$ is quite small for most nodes except for the initial few. Nevertheless, we did not find a suitable function for $p_i$ yet. Ideally we would like to find a function that ranges between 0 and 1 and exhibits exponential properties. 
+
+ Here are the changes made to V3:
+
+```python
+# ----- Part 1.2 -----
+count = max_nodes
+for j in node_list:
+    p = G.degree(j) / (2 * G.number_of_edges())
+    p = p + p * (1 - (1/(count+1)))
+    if random.random() <= p:
+        G.add_edge(j, i)
+        count -= 1
+```
+
+The function $f(x) = 1 - (\frac{1}{count + 1})$ exhibits the following features: 
+
+- $x = 1, f(x) = 0.5$
+- as $x \rightarrow infinity, f(x) \rightarrow 1$
+
+We believe this change will increase the number of KOLs in the network as it boosts $p_i$ for more connected nodes:
+
+![boosted pi](../graphs/PAv3_graph1.PNG)
