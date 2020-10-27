@@ -19,13 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PA.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="addded PA.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PA.md" beforeDir="false" afterPath="$PROJECT_DIR$/PA.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +145,14 @@
       <option name="presentableId" value="Default" />
       <updated>1601002089200</updated>
     </task>
+    <task id="LOCAL-00001" summary="addded PA.md">
+      <created>1603756074870</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603756074870</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -170,6 +175,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="addded PA.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="addded PA.md" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601102895485">
       <screen x="0" y="0" width="1280" height="720" />
@@ -179,34 +188,42 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="284" y="192" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603754447396" />
-    <state width="1420" height="82" key="GridCell.Tab.0.bottom" timestamp="1603755542587">
+    <state width="1420" height="82" key="GridCell.Tab.0.bottom" timestamp="1603756426507">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="1420" height="82" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603755542587" />
-    <state width="1420" height="82" key="GridCell.Tab.0.center" timestamp="1603755542587">
+    <state width="1420" height="82" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603756426507" />
+    <state width="1420" height="82" key="GridCell.Tab.0.center" timestamp="1603756426507">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="1420" height="82" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603755542587" />
-    <state width="1420" height="82" key="GridCell.Tab.0.left" timestamp="1603755542587">
+    <state width="1420" height="82" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603756426507" />
+    <state width="1420" height="82" key="GridCell.Tab.0.left" timestamp="1603756426507">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="1420" height="82" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603755542587" />
-    <state width="1420" height="82" key="GridCell.Tab.0.right" timestamp="1603755542587">
+    <state width="1420" height="82" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603756426507" />
+    <state width="1420" height="82" key="GridCell.Tab.0.right" timestamp="1603756426507">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="1420" height="82" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603755542587" />
+    <state width="1420" height="82" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603756426507" />
     <state x="4" y="82" key="SettingsEditor" timestamp="1603754452592">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
-    <state x="714" y="0" width="731" height="865" key="dock-window-1" timestamp="1603754421879">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603756077419">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="714" y="0" width="731" height="865" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1603754421879" />
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603756077419" />
+    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603756063963">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.860@0.0.1440.860" timestamp="1603756063963" />
+    <state x="714" y="0" width="731" height="865" maximized="true" key="dock-window-1" timestamp="1603756084513">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="714" y="0" width="731" height="865" maximized="true" key="dock-window-1/0.0.1440.860@0.0.1440.860" timestamp="1603756084513" />
     <state x="165" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1603754430948">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
