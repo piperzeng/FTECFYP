@@ -19,13 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="I lied one more to fixed the directory issues">
-      <change afterPath="$PROJECT_DIR$/graphs/PAv1_graph3.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphs/PAv2_graph1.PNG" afterDir="false" />
+    <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="Update PA.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/PA.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/PA.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nx.html" beforeDir="false" afterPath="$PROJECT_DIR$/nx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603767987585</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update PA.md">
+      <created>1603781922795</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603781922795</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -250,7 +253,8 @@
     <MESSAGE value="added two folders for organisizing files" />
     <MESSAGE value="Final commit before I study for midterm x(" />
     <MESSAGE value="I lied one more to fixed the directory issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="I lied one more to fixed the directory issues" />
+    <MESSAGE value="Update PA.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update PA.md" />
   </component>
   <component name="WindowStateProjectService">
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601102895485">
@@ -265,34 +269,34 @@
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="284" y="192" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1603754447396" />
-    <state width="699" height="2" key="GridCell.Tab.0.bottom" timestamp="1603781775314">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom" timestamp="1603783008363">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="699" height="2" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603781775314" />
-    <state width="699" height="2" key="GridCell.Tab.0.center" timestamp="1603781775314">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom/0.0.1440.860@0.0.1440.860" timestamp="1603783008363" />
+    <state width="1420" height="2" key="GridCell.Tab.0.center" timestamp="1603783008363">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="699" height="2" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603781775314" />
-    <state width="699" height="2" key="GridCell.Tab.0.left" timestamp="1603781775314">
+    <state width="1420" height="2" key="GridCell.Tab.0.center/0.0.1440.860@0.0.1440.860" timestamp="1603783008363" />
+    <state width="1420" height="2" key="GridCell.Tab.0.left" timestamp="1603783008363">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1601391503235" />
-    <state width="699" height="2" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603781775314" />
-    <state width="699" height="2" key="GridCell.Tab.0.right" timestamp="1603781775314">
+    <state width="1420" height="2" key="GridCell.Tab.0.left/0.0.1440.860@0.0.1440.860" timestamp="1603783008363" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right" timestamp="1603783008363">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
-    <state width="699" height="2" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603781775314" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603783008363" />
     <state x="4" y="82" key="SettingsEditor" timestamp="1603754452592">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603767990389">
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603781925296">
       <screen x="0" y="0" width="1440" height="860" />
     </state>
-    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603767990389" />
+    <state x="313" y="163" key="Vcs.Push.Dialog.v2/0.0.1440.860@0.0.1440.860" timestamp="1603781925296" />
     <state x="538" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603767935002">
       <screen x="0" y="0" width="1440" height="860" />
     </state>

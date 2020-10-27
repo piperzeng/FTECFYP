@@ -70,6 +70,26 @@ def preferentialAttachmentV2(max_nodes, loner=False, max_p=1.0):
     plotGraph(G)
     return(G)
 
+def preferentialAttachmentV2(max_nodes, loner=False, p_multi=1.0):
+    G = nx.Graph()
+    G.add_nodes_from([0, 1])
+    G.add_edge(0, 1)
+    # ----- Part 1 -----
+    for i in range(2, max_nodes):
+        # ----- Part 1.1 -----
+        node_list = sorted(node for (node, val) in sorted(G.degree, key=lambda x: x[1], reverse=True))
+        G.add_node(i)
+        # ----- Part 1.2 -----
+        for j in node_list:
+            p = G.degree(j) / (2 * G.number_of_edges())
+            if random.random() <= p:
+                G.add_edge(j, i)
+        # ----- Part 1.3 -----
+        if not loner & (G.degree(i) == 0):
+            rand_node = node_list[random.choice(node_list)]
+            G.add_edge(rand_node, i)
+    plotGraph(G)
+    return(G)
 def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
     # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
     # formula: https://www.sciencedirect.com/science/article/pii/S0378437104001402
