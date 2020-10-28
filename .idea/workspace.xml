@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53b958b4-5bb8-4a79-aac2-12129c8a47f1" name="Default Changelist" comment="updated network functions">
-      <change afterPath="$PROJECT_DIR$/graphs/PAv3_graph1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Code.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/build_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markdown/PA.md" beforeDir="false" afterPath="$PROJECT_DIR$/markdown/PA.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nx.html" beforeDir="false" afterPath="$PROJECT_DIR$/nx.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -300,9 +301,10 @@
     </state>
     <state width="1259" height="103" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1601391503236" />
     <state width="697" height="90" key="GridCell.Tab.0.right/0.0.1440.860@0.0.1440.860" timestamp="1603802738943" />
-    <state x="4" y="82" key="SettingsEditor" timestamp="1603754452592">
-      <screen x="0" y="0" width="1440" height="860" />
+    <state x="2885" y="432" key="SettingsEditor" timestamp="1603848852297">
+      <screen x="2880" y="333" width="1920" height="1040" />
     </state>
+    <state x="2885" y="432" key="SettingsEditor/0.0.1440.860/2880.333.1920.1040@2880.333.1920.1040" timestamp="1603848852297" />
     <state x="4" y="82" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1603754452592" />
     <state x="313" y="163" key="Vcs.Push.Dialog.v2" timestamp="1603794155222">
       <screen x="0" y="0" width="1440" height="860" />
