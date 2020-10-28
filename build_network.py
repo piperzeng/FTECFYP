@@ -1,7 +1,7 @@
 import random
 import numpy as np
 from plot_graph import *
-
+from network_analysis import *
 
 def getInverseHarmonicMean(graph, node):
     # calculate the IHM of an existing node in a graph
@@ -10,6 +10,12 @@ def getInverseHarmonicMean(graph, node):
         sum_inverse_degrees += 1 / graph.degree(n)
     IHM = sum_inverse_degrees / graph.degree(node)
     return IHM
+
+def netwrokxBApreferentialAttachment(max_nodes, no_edges):
+    G = nx.barabasi_albert_graph(max_nodes, no_edges)
+    plotGraph(G)
+    degreeDistribution(G)
+    return (G)
 
 
 def preferentialAttachmentV1(max_nodes, loner=False):
@@ -40,6 +46,8 @@ def preferentialAttachmentV1(max_nodes, loner=False):
                     if (round(np.random.uniform(0, 1), 1) < p):
                         G.add_edge(j, i)
     plotGraph(G)
+    degreeHistogram(G)
+    degreeDistribution(G)
     return (G)
 
 
@@ -206,4 +214,6 @@ def preferentialAttachment_MDA(max_nodes, m0, m):
     return []
 
 
-preferentialAttachment_2ndOrder(100, loner=False)
+# preferentialAttachment_2ndOrder(100, loner=False)
+# netwrokxBApreferentialAttachment(100, 5)
+preferentialAttachmentV1(100, loner=False)

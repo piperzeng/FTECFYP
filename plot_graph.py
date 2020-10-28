@@ -8,9 +8,9 @@ def plotGraph(G):
     # plotGraphWithDegree(G)
     # plotGraphWithNodeSizeDependOnNodeDegree(G)
     # plotGraphWithNodeColorDependOnNodeDegree(G)
-    # plotGraphCombined(G)
+    plotGraphCombined(G)
     # interactiveGraph(G)
-    interactiveGraphExtended(G)
+    # interactiveGraphExtended(G)
 
 def plotGraphWithDegree(G):
     # polt netwrok with nodes' degree labeled
