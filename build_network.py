@@ -119,9 +119,10 @@ def preferentialAttachmentART(max_nodes = 100, loner=False, p_multi=2.0):
     return(G)
 
 
-def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
+def preferentialAttachment_2ndOrder(max_nodes, coef=0, loner=False):
     # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
     # formula: https://www.sciencedirect.com/science/article/pii/S0378437104001402
+    # https://en.wikipedia.org/wiki/Scale-free_network
 
     # max_p: specify a maximum number for p
     # because for first few nodes, this (G.degree(node) / G.number_of_edges()) ratio is very high
@@ -154,8 +155,6 @@ def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0
             # calculate the prob. (p) that new node (i) will form edge with node (node)
             p = (G.degree(node) + coef * sum_neighbors_degree) / (
                         2 * G.number_of_edges() + coef * sum_neighbors_degree_squared)
-            if p >= max_p: p = max_p
-            print("the p value for node %d is: %f" % (node, p))
             if random.random() <= p:
                 G.add_edge(node, i)
                 print('edge between %d and %d created' % (node, i))
@@ -211,4 +210,4 @@ def preferentialAttachment_MDA(max_nodes, m0, m):
     return []
 
 
-preferentialAttachmentV3(100, loner=False)
+preferentialAttachment_2ndOrder(100, loner=False)
