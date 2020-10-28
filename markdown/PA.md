@@ -133,8 +133,8 @@ for node, degrees in node_list:
         p = max_p
     else:
         p = G.degree(node) / (2 * G.number_of_edges())
-        if random.random() <= p:
-           	G.add_edge(node, i)
+    if random.random() <= p:
+        G.add_edge(node, i)
 ```
 
 We found that by setting the *max_p* to a low value (e.g. 0.2), no single node will have significantly higher degree than other nodes:
@@ -163,7 +163,7 @@ for j in node_list:
         count -= 1
 ```
 
-The function $f(x) = 1 - (\frac{1}{count + 1})$ exhibits the following features: 
+The function $f(x) = 1 - (\frac{1}{x + 1})$ exhibits the following features: 
 
 - $x = 1, f(x) = 0.5$
 - as $x \rightarrow infinity, f(x) \rightarrow 1$
@@ -171,3 +171,8 @@ The function $f(x) = 1 - (\frac{1}{count + 1})$ exhibits the following features:
 We believe this change will increase the number of KOLs in the network as it boosts $p_i$ for more connected nodes:
 
 ![boosted pi](../graphs/PAv3_graph1.PNG)
+
+## preferentialAttachment_2ndOrder()
+
+This model follows "Two-level network model" proposed by Dangalchev. The detail can be found here: https://www.sciencedirect.com/science/article/pii/S0378437104001402
+

@@ -14,8 +14,7 @@ def getInverseHarmonicMean(graph, node):
 
 def preferentialAttachmentV1(max_nodes, loner=False):
     G = nx.Graph()
-    G.add_node(0)
-    G.add_node(1)
+    G.add_nodes_from([0, 1])
     G.add_edge(0, 1)
     p = 0.5
     # ----- Part 1 -----
@@ -119,10 +118,7 @@ def preferentialAttachmentART(max_nodes = 100, loner=False, p_multi=2.0):
     return(G)
 
 
-def preferentialAttachment_2ndOrder(max_nodes, coef=0, loner=False):
-    # v2 Goals: Implement the "Two-level network model" (proposed by Dangalchev)
-    # formula: https://www.sciencedirect.com/science/article/pii/S0378437104001402
-    # https://en.wikipedia.org/wiki/Scale-free_network
+def preferentialAttachment_2ndOrder(max_nodes, max_edges, loner=False, max_p=1.0):
 
     # max_p: specify a maximum number for p
     # because for first few nodes, this (G.degree(node) / G.number_of_edges()) ratio is very high
